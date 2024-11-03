@@ -1,3 +1,195 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body,html{
+    font-family: "Nunito", sans-serif;
+}
+.font_jost{
+    font-family: "Jost", sans-serif;
+}
+.font-bubblegum-sans{
+    font-family: "Bubblegum Sans", sans-serif;
+}
+
+
+
+/* HEADER*/
+.bg-destructive{
+    background-color: #ed145b;
+}
+
+@media (min-width: 1024px) {
+    .container {
+        max-width: 1024px;
+        margin: 0 auto;
+    }
+
+}
+.text-cream-foreground{
+    color: #fff
+}
+.bg-primary{
+    color: orange;
+}
+.bg-secondary{
+    background-color: #1CBBB4;
+}
+.text-secondary-foreground{
+    color: #1CBBB4  ;
+}
+.text-green-foreground{
+    color: #22C55E;
+}
+
+.btn{
+    position: relative;
+    z-index: 10;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.5s ease-in-out;
+    padding: 20px 30px;
+    border-radius: 6px;
+    overflow: hidden;
+    max-height: 60px;
+    
+    
+}
+
+.btn::after{
+    content:"";
+    position: absolute;
+    left: 0;
+    top:0;
+    width: 0%;
+    height: 100%;
+    z-index: -1;
+    transition: all 0.5s ease-in-out;
+    border-radius: 6px;
+    background-color: #73be48;
+}
+
+.btn:hover::after{
+    width: 100%;
+}
+
+.animate-left-right{
+    animation: left-right-2 4s linear infinite;
+}
+@keyframes left-right-2{
+    50%{transform: translateX(-40px);}
+    
+}
+.animate-up-down{
+    animation: up-down 4s linear infinite;
+}
+@keyframes up-down {
+    50%{ transform: translateY(-10px);}
+}
+.animate-left-right2{
+    animation: left-right 4s linear infinite;
+}
+@keyframes left-right{
+    50%{transform:translateX(-20px);}
+}
+
+
+
+.icon-kindergarden{
+    color: white;
+    background-color: #F7941E;
+    font-size: 40px;
+    height: 5rem  ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%  ;
+    border-radius: 5rem ;
+}
+.box4:hover .icon-book{
+    
+    color: white;
+    
+}
+.icon-book{
+    color: #22C55E;
+    
+    font-size: 40px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+          
+}
+.icon-book1{
+    color: white;
+    background-color:#ed145b ;
+    font-size: 40px;
+    height: 5rem  ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%  ;
+    border-radius: 5rem ;  
+}
+
+.icon-blocks{
+    color: white;
+    background-color: #73be48;
+    font-size: 40px;
+    height: 5rem  ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%  ;
+    border-radius: 5rem ;      
+
+}
+.icon_book2{
+    color: white;
+    background-color: #1CBBB4;
+    font-size: 40px;
+    height: 5rem  ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%  ;
+    border-radius: 5rem ;  
+}
+.icon_book3{
+    color: #22C55E;
+    background-color: white  ;
+    border-radius: 0px;
+   
+    
+  
+    
+}
+.img1{
+    position: absolute;
+    right: -100px;
+    transform: translateY( );
+    z-index: -1;
+    top: -180px;
+}
+.tag_content{
+    position: relative;
+}
+
+.tag2{
+    position: absolute;
+    opacity: 0;
+    
+}
+.service-card:hover .link-hover{
+    color: #22C55E;
+}
+.btn:hover .gr-hover{
+    color: #22C55E;
+}
+
+
+
+/* INput */
